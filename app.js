@@ -61,7 +61,55 @@ const dreamGirl = [
   },
 ];
 const friends = dreamGirl[0].dream1.contactInfo[0].facebook.friendsList;
-console.log(friends);
+// console.log(friends);
 for (const friend of friends) {
-  console.log(friend?.name);
+  //   console.log(friend?.name);
 }
+
+// for loop
+
+const friendName = ["hero", "broo", "china", "angel"];
+for (let i = 0; i < friendName.length; i++) {
+  const element = friendName[i];
+  //   console.log(element);
+}
+
+// for of
+for (const name of friendName) {
+  //   console.log(name);
+}
+
+// for in
+const object = { a: 1, b: 2, c: 3, name: "bro" };
+// console.log(object["name"]);
+
+for (const property in object) {
+  //   console.log(property);
+  //   console.log(object[property]);
+}
+
+// map
+// without map
+const nums = [1, 2, 4, 6, 5, 10];
+const temp = [];
+const result = (num) => num * num;
+for (const num of nums) {
+  const square = result(num);
+  temp.push(square);
+}
+// console.log(temp);
+
+// with map
+const resultOfMap = nums.map((num) => num * num);
+console.log(resultOfMap);
+
+// filter
+const products = [
+  { id: 1, name: "apple", price: 500, color: "golden" },
+  { id: 2, name: "xiaomi", price: 124, color: "black" },
+  { id: 3, name: "samsung", price: 200, color: "black" },
+  { id: 4, name: "samsung2", price: 200, color: "black" },
+  { id: 5, name: "lenovo", price: 300, color: "pink" },
+  { id: 6, name: "xiaomi", price: 100, color: "pink" },
+  { id: 7, name: "lenovo", price: 300, color: "pink" },
+];
