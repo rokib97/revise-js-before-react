@@ -113,3 +113,19 @@ const products = [
   { id: 6, name: "xiaomi", price: 100, color: "pink" },
   { id: 7, name: "lenovo", price: 300, color: "pink" },
 ];
+
+// filter
+// const filteredProduct = products.filter((product) => product.name == "xiaomi");
+// const filteredProduct = products.filter((product) => product.color != "pink");
+
+// find
+// const filteredProduct = products.find((product) => product.name == "xiaomi");
+const filteredProduct = products.find((product) => product.color != "golden");
+// console.log(filteredProduct);
+// for Each
+products.forEach((element) => {
+  //   console.log(element.price);
+});
+
+// tarnery
+console.log(true ? "sleep" : "more");
